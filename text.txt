@@ -1,0 +1,5 @@
+neuronove site
+umela inteligence je jednim z nejmladsich a nejrychleji se rozvijejicich vednich odvetvi
+timto cislem zahajujeme serial clanku v nichz se seznamite s nekolika jeho nejzajimavejsimi oblastmi
+a to s neuronovymi sitemi genetickymi algoritmy diferencialni evoluci fuzzy logikou
+pocitacovym videnim a robotikou

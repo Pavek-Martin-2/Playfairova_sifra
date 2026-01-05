@@ -62,7 +62,6 @@ vector<vector<char>> createTable(const string &key) {
     for (int i = 0; i < 5; i++)
         for (int j = 0; j < 5; j++)
             table[i][j] = filtered[index++];
-
     return table;
 }
 
@@ -83,7 +82,7 @@ pair<int,int> findPos(const vector<vector<char>> &table, char c) {
         for (int j = 0; j < 5; j++)
             if (table[i][j] == c)
                 return {i, j};
-    return {-1, -1};
+    return {-1, -1}; // -1 je prvni polozka pole
 }
 
 // Šifrování dvojice znakù

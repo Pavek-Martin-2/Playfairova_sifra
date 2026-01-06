@@ -7,8 +7,8 @@ using namespace std;
 
 // generator klicu pro playfair-ovu sifru, bude ukladat hromadne do souboru "kliceN.txt"
 
-int kolik_klicu = 10; // pocet souboru klicu
-int zamichat_kolikrat = 250; // pocet pomichani pole_abecada pred zobrazenim kazdeho klice
+int kolik_klicu = 10; // pocet souboru klicu, tady pripadne menit
+int zamichat_kolikrat = 500; // pocet pomichani pole_abecada pred zobrazenim kazdeho klice
 
 int rnd_1, rnd_2, aa, bb, cc, mix, pom;
 const int MAX = 25; // zde dat o jednu vice dat nez je pozadovane maximum ( pro RND )
@@ -84,10 +84,18 @@ cout<<"chyba pri zapisu do souboru "<<'"'<<output_file<<'"'<<endl; // ReadOnly a
 system("pause");
 exit(1); // chybovej exit 1
 }else{
-// vypis zamychanyho pole_abeceda pro kontrolu a jeho zapis do samostatnyho souboru
+/* puvodni verze
+// vypis zamychanyho pole_abeceda pro kontrolu
 for ( char znak : pole_abeceda) { // "char znak" musi bejt definovano az tady v main()
 cout<<znak;
-zapis<<znak; // zapis<<pole_abeceda[bb]; toto nefungovalo a psalo to kraviny
+zapis<<znak;
+}
+cout<<endl;
+zapis<<endl;
+*/
+for (bb=0; bb<=24; bb++){ // nova verze
+cout<<pole_abeceda[bb];	
+zapis<<pole_abeceda[bb]; // opraveno a zapisuje znaky jak ma
 }
 cout<<endl;
 zapis<<endl;

@@ -20,7 +20,7 @@ string output_file = "klice.txt";
 // otevreni souboru pro zapis z osetrenim pripadne chyby ReadOnly apod.
 ofstream zapis(output_file);
 if (!zapis){
-cout<<"chyba pri zapisu do souboru "<<'"'<<output_file<<'"'<<endl; // ReadOnly apod.
+cerr<<"chyba pri zapisu do souboru "<<'"'<<output_file<<'"'<<endl; // ReadOnly apod.
 system("pause");
 exit(1); // chybovej exit 1
 }

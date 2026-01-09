@@ -125,7 +125,7 @@ int main(){
 	// Naètení klíèe
     ifstream fk(klic);
     if (!fk){
-    cout<<"nenasel jsem soubor klice "<<'"'<<klic<<'"'<<endl;
+    cerr<<"nenasel jsem soubor klice "<<'"'<<klic<<'"'<<endl;
     system("pause");
     return 1;
     }
@@ -144,7 +144,7 @@ int main(){
     // Naètení vstupního textu ( zašifrovaného )
     ifstream fi(vstup); // puvodne input.txt od AI verze
     if (!fi){
-    cout<<"nenasel jsem vstupni soubor "<<'"'<<vstup<<'"'<<endl;
+    cerr<<"nenasel jsem vstupni soubor "<<'"'<<vstup<<'"'<<endl;
     system("pause");
     return 1;
     }
@@ -165,7 +165,7 @@ int main(){
     // Uložení
     ofstream fo(vystup); // output.txt -> output_desifrovano.txt
     if (!fo){ // chyba ReadOnly apod.
-    cout<<"chyba pri zapisu do souboru "<<'"'<<vystup<<'"'<<endl;
+    cerr<<"chyba pri zapisu do souboru "<<'"'<<vystup<<'"'<<endl;
     system("pause");
     return 1;
     }

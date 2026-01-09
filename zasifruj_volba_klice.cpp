@@ -138,7 +138,7 @@ int main(){
 	// Naètení souboru klíèe
     ifstream fk(klic);
 	if (!fk){
-    cout<<"nenasel jsem soubor klice "<<'"'<<klic<<'"'<<endl;
+    cerr<<"nenasel jsem soubor klice "<<'"'<<klic<<'"'<<endl;
     system("pause");
     return 1;
     }
@@ -154,7 +154,7 @@ int main(){
     // Naètení vstupního textu
     ifstream fi(vstup); // nacte puvodni nesifrovany textovy soubor - vstup.txt
     if (!fi){
-    cout<<"nenasel jsem soubor "<<'"'<<vstup<<'"'<<endl;
+    cerr<<"nenasel jsem soubor "<<'"'<<vstup<<'"'<<endl;
     system("pause");
     return 1;
     }
@@ -196,7 +196,7 @@ int main(){
     // Uloení vysledku sifrovani do souboru
     ofstream fo(vystup);
     if (!fo){ // chyba ReadOnly apod.
-    cout<<"chyba pri zapisu do souboru "<<'"'<<vystup<<'"'<<endl;
+    cerr<<"chyba pri zapisu do souboru "<<'"'<<vystup<<'"'<<endl;
     system("pause");
     return 1;
     }

@@ -1,0 +1,6 @@
+https://sdilej.cz/32947344/cpp.mp3
+audio vytvoreno pomoci pojeho programu pro prevod textu do audia
+
+ke stazeni zde na gitu
+https://github.com/Pavek-Martin-2/txt2wave
+
